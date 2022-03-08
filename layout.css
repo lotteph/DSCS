@@ -1,0 +1,134 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+}
+
+.h1_homepage {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    padding-bottom: 5px;
+}
+
+.h1_journeys {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    /* padding-bottom: 5px; */
+}
+
+.h1_journey_details {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    /* padding-bottom: 5px; */
+}
+
+input[type=text] {
+    width: 210px;
+    padding: 15px;
+}
+
+input[type=date] {
+    width: 110px;
+    padding: 15px;
+}
+
+input[type=time] {
+    width: 62px;
+    padding: 15px;
+}
+
+input[type=submit] {
+    background-color: #0099FF;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    margin-top: 40px;
+    margin: 40px 75px;
+    display: block;
+    width: 100px;
+}
+
+.text_homepage {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.text_weather {
+    /* padding-bottom: 8px; */
+    padding-top: 8px;
+}
+
+.frame_image {
+    width: 428px;
+    height: 926px;
+    overflow: visible;
+    aspect-ratio: 1.5 / 1;
+    background-image: url("istockphoto-823458196-612x612.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.screen {
+    width: 428px;
+    height: 926px;
+    overflow: hidden;
+}
+
+.frame_homepage {
+    width: 310px;
+    height: 600px;
+    background-color: #ffffff;
+    overflow: visible;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.frame_weather {
+    width: 310px;
+    height: 100px;
+    background-color: #ffffff;
+    overflow: visible;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.frame_journeys {
+    width: 310px;
+    height: 796px;
+    background-color: #ffffff;
+    overflow: visible;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.possible_journeys_placeholder {
+    padding-top: 15px;
+    line-height: 6;
+}
+
+.maps_overlay {
+    width: 260px;
+    /* height: 260px; */
+    background-color: #44ccff;
+    overflow: visible;
+    margin-top: 50px;
+    text-align: center;
+    padding: 110px 0;
+    /* padding-left: 50px; */
+    /* padding-top: 50px; */
+}
