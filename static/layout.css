@@ -5,6 +5,11 @@ body {
     line-height: 1.2;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .h1_homepage {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -32,23 +37,35 @@ body {
 }
 
 input[type=text] {
-    width: 210px;
+    width: 220px;
     padding: 15px;
 }
 
 input[type=date] {
-    width: 114px;
+    width: 119px;
     padding: 15px;
     font-size: 12px;
 }
 
 input[type=time] {
-    width: 62px;
+    width: 67px;
     padding: 15px;
     font-size: 12px;
 }
 
 input[type=submit] {
+    background-color: #0099FF;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    /* padding: 15px; */
+    /* margin-top: 40px;
+    margin: 40px 75px; */
+    display: block;
+    width: 100px;
+}
+
+.homepage_submit {
     background-color: #0099FF;
     color: white;
     border-radius: 8px;
@@ -125,11 +142,27 @@ input[type=submit] {
 }
 
 .possible_journeys_placeholder {
-    margin-top: 40px;
+    margin-top: 25px;
+}
+
+.possible_journeys_radio {
+    margin-left: 30px;
+}
+
+.possible_journeys_submit {
+    background-color: #0099FF;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    /* margin-top: 40px; */
+    margin: 5px 70px;
+    display: block;
+    width: 100px;
 }
 
 .possible_journey {
-  width: 245px;
+  width: 260px;
   height: 25px;
   background-color: #3388FF;
   text-align: center;

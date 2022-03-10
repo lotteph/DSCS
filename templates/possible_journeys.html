@@ -11,27 +11,43 @@
             <a href="http://localhost:5000/"><i class="ph-arrow-bend-up-left"></i></a>
             <div class="h1_journeys">Plan your trip </div>
             <div class="possible_journeys_form">
-                <form>
+                <form action="http://localhost:5000/possiblejourneys" method="post">
                     <input type="text" name="from"
                         value="{{ result["from"] }}" /> <br>
+
+                    <input type="text" name="via"
+                        {% if result["via"] != '' %}
+                            value="{{ result["via"] }}"
+                        {% elif result["via"] == '' %}
+                            placeholder="Via: Address, station, etc."
+                        {% endif %}/>
 
                     <input type="text" name="to"
                         value="{{ result["to"] }}" /> <br>
 
                     <input type="date" name="date" value="{{ result["date"] }}" /><input type="time" name="time" value="{{ result["time"] }}" /> <br>
 
+                    <div class="possible_journeys_radio">
+                        <input type="radio" id="departure" name="journey_type" value="Departure" {% if result["journey_type"] == "Departure" %}checked{% endif %}>
+                        <label for="departure">Departure</label>
+                        <input type="radio" id="arrival" name="journey_type" value="Arrival" {% if result["journey_type"] == "Arrival" %}checked{% endif %}>
+                        <label for="arrival">Arrival</label><br>
+                    </div>
+
+                    <div class="possible_journeys_submit">
+                        <input type="submit" value="Plan again">
+                    </div>
                 </form>
             </div>
 
             <div class="possible_journeys_placeholder">
-                {% for i in range(6) %}
-                    <div class="possible_journey">
-                        Possible journeys placeholder
-                    </div>
+                {% for i in range(5) %}
+                    <a href="http://localhost:5000/journeydetails">
+                        <div class="possible_journey">
+                            Possible journeys placeholder
+                        </div>
+                    </a>
                 {% endfor %}
-                <!-- <div class="possible_journey">Possible journeys placeholder</div><br>
-                <div class="possible_journey">Possible journeys placeholder</div><br>
-                <div class="possible_journey">Possible journeys placeholder</div><br> -->
             </div>
 
 

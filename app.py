@@ -52,15 +52,18 @@ def index():
     data = [weather, g.city, icon]
     return render_template('homepage.html', weather=data)
 
-# @app.route('/possiblejourneys')
-# def possiblejourneys(res):
-#    return render_template('possible_journeys.html')
-
 @app.route('/possiblejourneys', methods=['POST', 'GET'])
 def possiblejourneys():
     if request.method == 'POST':
         result = request.form
-        return render_template('possible_journeys.html', result=result)
+        print(result)
+    else:
+        result = []
+    return render_template('possible_journeys.html', result=result)
+
+@app.route('/journeydetails')
+def journeydetails():
+    return render_template('journey_details.html')
 
 if __name__ == '__main__':
    app.run(debug = True)
