@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="layout.css"> -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+<div class="frame_image">
+    <div class="screen">
+        <div class="frame_journeys">
+            <a href="http://localhost:5000/"><i class="ph-arrow-bend-up-left"></i></a>
+            <div class="h1_journeys">Plan your trip </div>
+            <div class="possible_journeys_form">
+                <form>
+                    <input type="text" name="from"
+                        value="{{ result["from"] }}" /> <br>
+
+                    <input type="text" name="to"
+                        value="{{ result["to"] }}" /> <br>
+
+                    <input type="date" name="date" value="{{ result["date"] }}" /><input type="time" name="time" value="{{ result["time"] }}" /> <br>
+
+                </form>
+            </div>
+
+            <div class="possible_journeys_placeholder">
+                {% for i in range(6) %}
+                    <div class="possible_journey">
+                        Possible journeys placeholder
+                    </div>
+                {% endfor %}
+                <!-- <div class="possible_journey">Possible journeys placeholder</div><br>
+                <div class="possible_journey">Possible journeys placeholder</div><br>
+                <div class="possible_journey">Possible journeys placeholder</div><br> -->
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>

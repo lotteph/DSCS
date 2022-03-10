@@ -18,6 +18,8 @@ body {
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 1.2;
+    float: right;
+    padding-right: 180px;
     /* padding-bottom: 5px; */
 }
 
@@ -35,13 +37,15 @@ input[type=text] {
 }
 
 input[type=date] {
-    width: 110px;
+    width: 114px;
     padding: 15px;
+    font-size: 12px;
 }
 
 input[type=time] {
     width: 62px;
     padding: 15px;
+    font-size: 12px;
 }
 
 input[type=submit] {
@@ -116,9 +120,21 @@ input[type=submit] {
     padding-top: 30px;
 }
 
+.possible_journeys_form {
+    margin-top: 15px;
+}
+
 .possible_journeys_placeholder {
-    padding-top: 15px;
-    line-height: 6;
+    margin-top: 40px;
+}
+
+.possible_journey {
+  width: 245px;
+  height: 25px;
+  background-color: #3388FF;
+  text-align: center;
+  padding: 25px 0;
+  margin: 10px 0;
 }
 
 .maps_overlay {
