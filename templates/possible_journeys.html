@@ -41,13 +41,35 @@
             </div>
 
             <div class="possible_journeys_placeholder">
-                {% for i in range(5) %}
-                    <a href="http://localhost:5000/journeydetails">
+                {% if route|length == 1 %}
+                    <!-- <a href="http://localhost:5000/journeydetails"> -->
                         <div class="possible_journey">
-                            Possible journeys placeholder
+                            {{ route[0] }}
                         </div>
-                    </a>
-                {% endfor %}
+                    <!-- </a> -->
+                {% else %}
+                    {% for i in range(0, route[-1]) %}
+                        <a href="{{ url_for('journeydetails', journey_details=route[i]) }}">
+                            <div class="possible_journey">
+                                <div class="possible_journey_dep_arr">
+                                    {{ route[i][0] }} <i class="ph-arrow-right"></i> {{ route[i][1] }}
+                                    <div class="possible_journey_time">
+                                        <i class="ph-clock"></i> {{ route[i][2] }}
+                                    </div>
+                                </div>
+
+                                <div class="possible_journey_transport_icons">
+                                    {% for i in range(route[i][-1]) %}
+                                        <i class="{{ route[i][-2][i] }}"></i><i class="ph-arrow-right"></i>
+                                    {% endfor %}<i class="{{ route[i][-2][-1] }}"></i>
+                                    <div class="possible_journey_distance">
+                                        <i class="ph-person-simple-walk"></i> {{ route[i][3] }} mins
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                {% endif %}
             </div>
 
 

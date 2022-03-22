@@ -163,11 +163,33 @@ input[type=submit] {
 
 .possible_journey {
   width: 260px;
-  height: 25px;
+  /* height: 75px; */
   background-color: #3388FF;
-  text-align: center;
-  padding: 25px 0;
+  /* text-align: center; */
+  /* padding: 25px 0; */
   margin: 10px 0;
+  font-size: 14px;
+}
+
+.possible_journey_dep_arr {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.possible_journey_transport_icons {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.possible_journey_time {
+    float: right;
+}
+
+.possible_journey_distance {
+    float: right;
 }
 
 .maps_overlay {

@@ -17,6 +17,11 @@
             <br><br><br><br>
             ~~ Journey details ~~
 
+            <div class="journey_weather">
+                Weather forecast for {{ weather[1] }}: <i class="{{ weather[2] }}"></i><br>
+                {{ weather[0]['hourly']['summary'] }}
+            </div>
+
         </div>
     </div>
 </div>
