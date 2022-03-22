@@ -1,0 +1,17 @@
+correctorder,maatschappij,haltenr,plaats,haltenaam,xcoordinaat,ycoordinaat,dagcode,lijnnr,richting,dagfreq
+0,GVB,1,Amsterdam,"Amsterdam, Muiderpoortstation",124052.0,486034.0,5,40,1,61
+1,GVB,8129,Amsterdam,"Amsterdam, Molukkenstraat",124443.0,486051.0,5,40,1,61
+2,GVB,8132,Amsterdam,"Amsterdam, Valentijnkade",124590.0,485772.0,5,40,1,61
+3,GVB,557,Amsterdam,"Amsterdam, C. Mac Gillavrylaan",124822.0,485628.0,5,40,1,61
+4,GVB,491,Amsterdam,"Amsterdam, Science Park A'dam",125363.0,485298.0,5,40,1,61
+5,GVB,502,Amsterdam,"Amsterdam, Science Park Terra",125659.0,485159.0,5,40,1,61
+6,GVB,494,Amsterdam,"Amsterdam, Science Park Aqua",125499.0,485434.0,5,40,1,61
+7,GVB,500,Amsterdam,"Amsterdam, Science Park Aer",125830.0,485301.0,5,40,1,61
+8,GVB,538,Amsterdam,"Amsterdam, Station Science Park",125082.0,485034.0,5,40,1,61
+9,GVB,537,Amsterdam,"Amsterdam, Linnaeusparkweg",124717.0,484686.0,5,40,1,61
+10,GVB,53,Amsterdam,"Amsterdam, Kruislaan",124506.0,484484.0,5,40,1,61
+11,GVB,498,Amsterdam,"Amsterdam, Pekelharingstraat",125833.0,485515.0,5,40,1,61
+12,GVB,48,Amsterdam,"Amsterdam, Lorentzlaan",123980.0,484310.0,5,40,1,61
+13,GVB,51,Amsterdam,"Amsterdam, Maxwellstraat",124290.0,484273.0,5,40,1,61
+14,GVB,46,Amsterdam,"Amsterdam, Fizeaustraat",123480.0,484320.0,5,40,1,61
+15,GVB,9038,Amsterdam,"Amsterdam, Amstelstation",123103.0,484354.0,5,40,1,61
