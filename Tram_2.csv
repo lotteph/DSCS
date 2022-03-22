@@ -1,0 +1,23 @@
+,maatschappij,haltenr,plaats,haltenaam,xcoordinaat,ycoordinaat,dagcode,lijnnr,richting,dagfreq
+0,GVB,4089,Amsterdam,"Amsterdam, Louwesweg",116701.0,484459.0,5,2,1,143
+1,GVB,4110,Amsterdam,"Amsterdam, Westlandgracht",118114.0,484989.0,5,2,1,143
+2,GVB,4111,Amsterdam,"Amsterdam, Delflandlaan",117848.0,484988.0,5,2,1,143
+3,GVB,4113,Amsterdam,"Amsterdam, Johan Huizingalaan",116864.0,484721.0,5,2,1,143
+4,GVB,4116,Amsterdam,"Amsterdam, Heemstedestraat",117320.0,484986.0,5,2,1,143
+5,GVB,4276,Amsterdam,"Amsterdam, Laan v.Vlaanderen",116056.0,484434.0,5,2,1,143
+6,GVB,4278,Amsterdam,"Amsterdam, Kasterleepark",115711.0,484422.0,5,2,1,143
+7,GVB,4314,Amsterdam,"Amsterdam, Oudenaardeplantsoen",115247.0,484275.0,5,2,1,143
+8,GVB,5011,Amsterdam,"Amsterdam, Centraal Station",121772.0,487916.0,5,2,1,143
+9,GVB,5061,Amsterdam,"Amsterdam, Spui",121092.0,486944.0,5,2,1,143
+10,GVB,5063,Amsterdam,"Amsterdam, Dam",121184.0,487290.0,5,2,1,143
+11,GVB,5069,Amsterdam,"Amsterdam, Nieuwezijds Kolk",121397.0,487716.0,5,2,1,143
+12,GVB,6067,Amsterdam,"Amsterdam, Leidseplein",120658.0,486389.0,5,2,1,143
+13,GVB,6071,Amsterdam,"Amsterdam, Prinsengracht",120770.0,486475.0,5,2,1,143
+14,GVB,6073,Amsterdam,"Amsterdam, Keizersgracht",120908.0,486580.0,5,2,1,143
+15,GVB,6075,Amsterdam,"Amsterdam, Koningsplein",121097.0,486700.0,5,2,1,143
+16,GVB,7028,Amsterdam,"Amsterdam, Corn. Schuytstraat",119825.0,485475.0,5,2,1,143
+17,GVB,7032,Amsterdam,"Amsterdam, Valeriusplein",119304.0,485160.0,5,2,1,143
+18,GVB,7034,Amsterdam,"Amsterdam, Amstelveenseweg",118805.0,484957.0,5,2,1,143
+19,GVB,7049,Amsterdam,"Amsterdam, Hoofddorpplein",118370.0,484943.0,5,2,1,143
+20,GVB,7322,Amsterdam,"Amsterdam, Centrum Nieuw Sloten",120429.0,485737.0,5,2,1,143
+21,GVB,7324,Amsterdam,"Amsterdam, Museumplein",120676.0,485928.0,5,2,1,143
