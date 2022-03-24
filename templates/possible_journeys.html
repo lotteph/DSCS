@@ -12,20 +12,17 @@
             <div class="h1_journeys">Plan your trip </div>
             <div class="possible_journeys_form">
                 <form action="http://localhost:5000/possiblejourneys" method="post">
-                    <input type="text" name="from"
-                        value="{{ result["from"] }}" /> <br>
+                    <div class="possible_journey_textfield">
+                        <input type="text" name="from" autocomplete="off" value="{{ result["from"] }}" /> <br>
+                    </div>
 
-                    <input type="text" name="via"
-                        {% if result["via"] != '' %}
-                            value="{{ result["via"] }}"
-                        {% elif result["via"] == '' %}
-                            placeholder="Via: Address, station, etc."
-                        {% endif %}/>
+                    <div class="possible_journey_textfield">
+                        <input type="text" name="to" autocomplete="off" value="{{ result["to"] }}" /> <br>
+                    </div>
 
-                    <input type="text" name="to"
-                        value="{{ result["to"] }}" /> <br>
-
-                    <input type="date" name="date" value="{{ result["date"] }}" /><input type="time" name="time" value="{{ result["time"] }}" /> <br>
+                    <div class="possible_journey_textfield">
+                        <input type="date" name="date" value="{{ result["date"] }}" /><input type="time" name="time" value="{{ result["time"] }}" /> <br>
+                    </div>
 
                     <div class="possible_journeys_radio">
                         <input type="radio" id="departure" name="journey_type" value="Departure" {% if result["journey_type"] == "Departure" %}checked{% endif %}>
@@ -49,7 +46,7 @@
                     <!-- </a> -->
                 {% else %}
                     {% for i in range(0, route[-1]) %}
-                        <a href="{{ url_for('journeydetails', journey_details=route[i]) }}">
+                        <a href="{{ url_for('journeydetails', route_num=i) }}">
                             <div class="possible_journey">
                                 <div class="possible_journey_dep_arr">
                                     {{ route[i][0] }} <i class="ph-arrow-right"></i> {{ route[i][1] }}
@@ -59,9 +56,9 @@
                                 </div>
 
                                 <div class="possible_journey_transport_icons">
-                                    {% for i in range(route[i][-1]) %}
-                                        <i class="{{ route[i][-2][i] }}"></i><i class="ph-arrow-right"></i>
-                                    {% endfor %}<i class="{{ route[i][-2][-1] }}"></i>
+                                    {% for j in range(route[i][5]) %}
+                                        <i class="{{ route[i][4][j] }}"></i><i class="ph-arrow-right"></i>
+                                    {% endfor %}<i class="{{ route[i][4][-1] }}"></i>
                                     <div class="possible_journey_distance">
                                         <i class="ph-person-simple-walk"></i> {{ route[i][3] }} mins
                                     </div>

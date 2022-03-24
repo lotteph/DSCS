@@ -33,6 +33,7 @@ a {
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 1.2;
+    padding-top: 10px;
     /* padding-bottom: 5px; */
 }
 
@@ -113,6 +114,7 @@ input[type=submit] {
     margin-top: 50px;
     padding-left: 50px;
     padding-top: 50px;
+    border-radius: 5px;
 }
 
 .frame_weather {
@@ -124,6 +126,7 @@ input[type=submit] {
     margin-top: 50px;
     padding-left: 50px;
     padding-top: 25px;
+    border-radius: 5px;
 }
 
 .frame_journeys {
@@ -135,6 +138,9 @@ input[type=submit] {
     margin-top: 50px;
     padding-left: 50px;
     padding-top: 30px;
+    position: relative;
+    border-radius: 5px;
+    overflow: auto;
 }
 
 .possible_journeys_form {
@@ -145,8 +151,13 @@ input[type=submit] {
     margin-top: 25px;
 }
 
+.possible_journey_textfield {
+    padding-bottom: 10px;
+}
+
 .possible_journeys_radio {
     margin-left: 30px;
+    padding-top: 5px;
 }
 
 .possible_journeys_submit {
@@ -156,7 +167,7 @@ input[type=submit] {
     border: none;
     padding: 15px;
     /* margin-top: 40px; */
-    margin: 5px 70px;
+    margin: 15px 70px;
     display: block;
     width: 100px;
 }
@@ -164,11 +175,12 @@ input[type=submit] {
 .possible_journey {
   width: 260px;
   /* height: 75px; */
-  background-color: #3388FF;
+  background-color: #9dbef5;
+  border-radius: 5px;
   /* text-align: center; */
   /* padding: 25px 0; */
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .possible_journey_dep_arr {
@@ -202,4 +214,87 @@ input[type=submit] {
     padding: 110px 0;
     /* padding-left: 50px; */
     /* padding-top: 50px; */
+}
+
+.journey_details {
+    margin-top: 25px;
+    /* padding-top: 10px; */
+}
+
+.journey_leg {
+  width: 260px;
+  /* height: 75px; */
+  background-color: #9dbef5;
+  border-radius: 5px;
+  /* text-align: center; */
+  /* padding: 25px 0; */
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.journey_leg_dep {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.journey_leg_transit_type {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 27px;
+}
+
+.journey_leg_duration {
+    padding-left: 46px;
+    padding-bottom: 5px;
+}
+
+.journey_leg_arr {
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.fitbit_goal {
+    /* padding-top: 10px; */
+    /* position: absolute;
+    bottom: 0;
+    padding-bottom: 150px; */
+}
+
+.journey_weather {
+    width: 260px;
+    font-size: 13px;
+    /* position: absolute;
+    bottom: 0; */
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.journey_detail_travel_icons {
+    padding-top: 15px;
+}
+
+.journey_detail_time {
+    width: 260px;
+    margin: 10px 0;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.journey_detail_travel_time {
+    float: right;
+}
+
+.journey_detail_date {
+    float: left;
+}
+
+.journey_extra_options {
+    /* text-align: center; */
+    padding-top: 15px;
+}
+
+.journey_extra_walk {
+    font-size: 12px;
 }

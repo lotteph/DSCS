@@ -9,17 +9,52 @@
     <div class="screen">
         <div class="frame_journeys">
             <a href="http://localhost:5000/possiblejourneys"><i class="ph-x"></i></a>
-            <div class="h1_journey_details">Address 1 -> <br>Address 2</div>
+            <div class="h1_journey_details">{{ route[route_num][7] }} <i class="ph-arrow-right"></i> <br>{{ route[route_num][8] }}</div>
 
-            <div class="maps_overlay">
-                [Google Maps overlay]
+            <div class="journey_detail_travel_icons">
+                {% for j in range(route[route_num][5]) %}
+                    <i class="{{ route[route_num][4][j] }}"></i><i class="ph-arrow-right"></i>
+                {% endfor %}<i class="{{ route[route_num][4][-1] }}"></i>
             </div>
-            <br><br><br><br>
-            ~~ Journey details ~~
+
+            <div class="journey_detail_time">
+                <div class="journey_detail_date"><i class="ph-calendar-blank"></i>{{ result["date"] }}</div>
+                <div class="journey_detail_travel_time"><i class="ph-clock"></i> {{ route[route_num][2] }}</div>
+            </div>
+
+
+            <div class="journey_details">
+                {% for i in range(0, route[route_num][-1][-1]) %}
+                    <div class="journey_leg">
+                        {% if route[route_num][-1][i][-1] == 'WALKING' %}
+                            <div class="journey_leg_dep">{{ route[route_num][-1][i][3] }} {{route[route_num][-1][i][2]}}</div>
+                            <div class="journey_leg_transit_type"><i class="{{ route[route_num][4][i] }}"></i> {{ route[route_num][-1][i][0] }} </div>
+                            <div class="journey_leg_arr">{{ route[route_num][-1][i][5] }} {{route[route_num][-1][i][4]}}</div>
+                        {% else %}
+                        <div class="journey_leg_dep">{{ route[route_num][-1][i][3] }} {{route[route_num][-1][i][2]}}</div>
+                        <div class="journey_leg_transit_type"><i class="{{ route[route_num][4][i] }}"></i> {{ route[route_num][-1][i][7] }} direction {{ route[route_num][-1][i][6] }} </div>
+                        <div class="journey_leg_duration">{{ route[route_num][-1][i][0] }}, {{ route[route_num][-1][i][8] }} stops</div>
+                        <div class="journey_leg_arr">{{ route[route_num][-1][i][5] }} {{route[route_num][-1][i][4]}}</div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="fitbit_goal">
+                This route has {{ route[route_num][3] }} minutes of walking, which is {{ '%0.1f' % (route[route_num][3] / fitbit_goal * 100)|float }}% of your daily goal!
+            </div>
+
+            <div class="journey_extra_options">You could also try walking from:</div>
+            {% for item in walking_options %}
+                <div class="journey_extra_walk">
+                    &#8226;{{ item[0] }}, <i class="ph-person-simple-walk"></i>{{ item[1] }} mins extra, <i class="ph-activity"></i> {{ '%0.1f' % (item[-1] / fitbit_goal * 100)|float }}%
+                </div>
+            {% endfor %}
 
             <div class="journey_weather">
-                Weather forecast for {{ weather[1] }}: <i class="{{ weather[2] }}"></i><br>
-                {{ weather[0]['hourly']['summary'] }}
+                Weather forecast for {{ route[route_num][8] }}: <i class="{{ weather[-1] }}"></i><br>
+                {{ weather[0] }} <br>
+                The expected precipitation is {{ weather[1] }} mm and the expected temperature is {{ weather [2]|int }} &#176;C.
             </div>
 
         </div>
