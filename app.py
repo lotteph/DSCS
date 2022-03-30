@@ -12,12 +12,12 @@ import fitbit
 
 from flask import Flask, redirect, url_for, request, render_template, session
 app = Flask(__name__)
-app.secret_key = '1648030020'
+app.secret_key = ''
 
-DARKSKY_KEY = "d07fa9b030dfc7ae1a1897828f0e01de"
-GOOGLE_MAPS_KEY = "AIzaSyAJiy_cEFCxdnBHlWCvnnlVBj6zcTfZfSk"
-CLIENT_ID='2388K5'
-CLIENT_SECRET='b49da8eef0b5aa709bfafef69d68ae9c'
+DARKSKY_KEY = ""
+GOOGLE_MAPS_KEY = ""
+CLIENT_ID=''
+CLIENT_SECRET=''
 
 def get_goal(auth2_client):
     auth2_client.activities_daily_goal(active_minutes=30)
